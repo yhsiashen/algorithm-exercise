@@ -1,0 +1,58 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chinalife.springmvc.dao.SeckillDao">
+    <!-- 目的:为DAO接口方法提供sql语句设置-->
+
+    <update id="reduceNumber">
+        <!-- 具体sql -->
+        UPDATE
+        seckill
+        SET
+        seckill_number=seckill_number-1
+        WHERE  seckill_id= #{seckillId}
+        <!-- '<=' 与xml语法冲突,使用<![CDATA[ ]]> -->
+        AND start_time <![CDATA[<=]]> #{killTime}
+        AND end_time >= #{killTime}
+        AND seckill_number > 0
+    </update>
+
+    <select id="queryById" resultType="com.chinalife.springmvc.entity.Seckill">
+        SELECT
+            seckill_id,
+            name,
+            seckill_number,
+            start_time,
+            end_time,
+            create_time
+        FROM seckill
+        WHERE seckill_id = #{seckillId}
+    </select>
+
+    <select id="queryAll" resultType="com.chinalife.springmvc.entity.Seckill">
+        SELECT
+            seckill_id,
+            name,
+            seckill_number,
+            start_time,
+            end_time
+        FROM seckill
+        WHERE seckill_id >= #{min}
+        AND  seckill_id <![CDATA[<=]]> #{max}
+         ORDER BY create_time DESC
+
+    </select>
+
+   <select id="selectVersionID" parameterType="String" resultType="String">
+       select VERSION_NO from UAA_VERSION_TRACE A WHERE A.ID=#{id}
+   </select>
+
+    <update id="updateSeckillNumber" parameterType="String">
+        UPDATE SECKILL SET seckill_number =#{number} WHERE seckill_id = '4';
+    </update>
+
+    <update id="updateSeckillName" parameterType="String">
+        UPDATE seckill SET name = #{name} WHERE seckill_id='4';
+    </update>
+</mapper>
