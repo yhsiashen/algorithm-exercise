@@ -1,2 +1,2 @@
-# seckilldemo
-a ssm project for  springmvc  learning
+# my algorithm exersize
+data structure ,algorithm and concurrency
