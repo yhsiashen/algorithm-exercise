@@ -2,7 +2,7 @@ package org.yuhang.algorithm;
 
 import java.util.Arrays;
 
-/**二分查找算法
+/**二分查找法
  * Created by yuhang on 2018/3/13.
  */
 public class BinarySearch {
