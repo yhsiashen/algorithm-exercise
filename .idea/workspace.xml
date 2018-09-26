@@ -2,98 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11619f82-8e36-409f-b970-94398da31761" name="Default" comment="git test">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/algorithm-exercise.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/BinarySearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/InsertSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/MergeSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/QuicSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/SelectSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/ThreadPoolTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/binarytree/BalancedTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/binarytree/BinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/binarytree/Node.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/designpattern/proxypattern/Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/designpattern/proxypattern/RealSubject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/designpattern/proxypattern/Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/designpattern/reflect/ReflectTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgramming.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgrammingMagicCoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgrammingMaxSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgrammingToutiao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgrammingTri1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/dynamicalgorithm/DynamicProgrammingTri2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/leetcode/ProblemLongestPalindrome.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/leetcode/ProblemUniquePaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/leetcode/ProblemUniquePaths1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/leetcode/ProblemUniquePathsWithObstacles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem10.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem11.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem12.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem13.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem13bak.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem14.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem15.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem16.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem17.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem17Other.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem18.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem19.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem20.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem21.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem22.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem22Other.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem23.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem24.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem25.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem26.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem27.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem28.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem5.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem6.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem7.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem8.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/algorithm/rowtooffer/Problem9.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/ConcurrencyTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/ConcurrencyTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/ForkJoinTaskTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/aqs/CountDownLatchTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/aqs/CountDownLatchTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/aqs/CycliBarrierTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/aqs/CycliBarrierTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/aqs/SemaphoreTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/atomic/AtomicTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/atomic/AtomicTest2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/atomic/AtomicTest3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/deadlock/DeadLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/forkjoinpool/TestForkJoinPool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/forkjoinpool/TestForkJoinPoolForMergeSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/lock/ConditionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/lock/ReentrantlockTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/lock/SpinLockTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/multthread/FutureTaskTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/multthread/ThreadPoolExecutorTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/singleton/Singleton1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/singleton/Singleton2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/singleton/Singleton3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/singleton/Singleton4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/singleton/Singleton5.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/sync/SynchronizedTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm-exercise/src/org/yuhang/concurrency/sync/VectorTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/yuhang/algorithm/BinarySearch.java" afterPath="$PROJECT_DIR$/src/org/yuhang/algorithm/BinarySearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/rowtooffer/Problem1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -123,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/InsertSort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -132,8 +41,8 @@
       <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="247">
+              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -761,7 +670,7 @@
       <workItem from="1537952714999" duration="46000" />
       <workItem from="1537952829052" duration="47000" />
       <workItem from="1537968367030" duration="84000" />
-      <workItem from="1537968459231" duration="1516000" />
+      <workItem from="1537968459231" duration="1888000" />
     </task>
     <task id="LOCAL-00001" summary="git test">
       <created>1537968508324</created>
@@ -809,7 +718,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1693000" />
+    <option name="totallyTimeSpent" value="2065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -827,10 +736,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32169312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.584127" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1212,7 +1121,7 @@
     <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/rowtooffer/Problem1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1220,15 +1129,15 @@
     <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/InsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/yuhang/algorithm/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state relative-caret-position="247">
+          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding />
         </state>
       </provider>
