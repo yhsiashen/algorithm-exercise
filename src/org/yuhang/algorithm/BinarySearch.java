@@ -56,7 +56,7 @@ public class BinarySearch {
         int[] a = {6,1,9,7,8,12,11,18};
         int key = 10;
         Arrays.sort(a);
-//        System.out.println(BinarySearch.searchIndexByRec(a,key,0,a.length-1));
+        System.out.println(BinarySearch.searchIndexByRec(a,key,0,a.length-1));
         serchIndex(a,key);
 
     }
