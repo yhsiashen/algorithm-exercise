@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="uaa-authentication-web-sources">
-    <CLASSES>
-      <root url="jar://D:/Project/workspace/uaa-parent/uaa-authentication-web/target/uaa-authentication-web-sources.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
