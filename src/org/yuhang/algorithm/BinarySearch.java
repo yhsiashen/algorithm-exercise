@@ -58,6 +58,7 @@ public class BinarySearch {
         Arrays.sort(a);
         System.out.println(BinarySearch.searchIndexByRec(a,key,0,a.length-1));
         serchIndex(a,key);
+        System.out.println("git test");
 
     }
 }
