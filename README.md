@@ -1,2 +1,2 @@
-# my algorithm exersize
+# my algorithm exercise
 data structure ,algorithm and concurrency
