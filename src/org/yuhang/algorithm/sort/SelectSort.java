@@ -1,4 +1,4 @@
-package org.yuhang.algorithm;
+package org.yuhang.algorithm.sort;
 
 /**  选择排序算法
  * Created by yuhang on 2018/3/14.

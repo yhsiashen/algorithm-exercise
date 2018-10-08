@@ -1,4 +1,4 @@
-package org.yuhang.algorithm;
+package org.yuhang.algorithm.sort;
 
 import java.util.Arrays;
 
