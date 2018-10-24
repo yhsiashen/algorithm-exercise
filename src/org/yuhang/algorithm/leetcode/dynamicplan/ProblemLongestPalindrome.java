@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /**  动态规划-最长回文子串
  * Created by chinalife on 2018/6/5.

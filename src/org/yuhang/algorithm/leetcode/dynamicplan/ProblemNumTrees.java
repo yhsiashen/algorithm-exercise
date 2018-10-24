@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 1,2...n个数可以构造的二叉搜索树的数目
  * Created by chinalife on 2018/10/15.

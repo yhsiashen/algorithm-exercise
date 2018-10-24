@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /**
  * 动态规划-有障碍物的路径问题

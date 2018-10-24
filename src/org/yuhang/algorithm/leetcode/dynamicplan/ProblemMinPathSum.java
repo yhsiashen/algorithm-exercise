@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 矩阵的最小路径和
  * Created by chinalife on 2018/10/15.

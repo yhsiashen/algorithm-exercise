@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /**  动态规划-不同路径问题-记忆性递归
  * Created by chinalife on 2018/6/9.

@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 路径问题-递推型递归
  * Created by chinalife on 2018/6/24.

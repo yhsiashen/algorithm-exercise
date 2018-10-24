@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 股票买卖最大利润问题  easy
  * Created by chinalife on 2018/10/12.
