@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 路径问题-递推型递归
  * Created by chinalife on 2018/6/24.
@@ -14,7 +14,7 @@ public class ProblemUniquePaths1 {
         }
         for(int i = 2;i<=m;i++){
             for(int j = 2;j<=n;j++){
-                routin[i][j] = routin[i-1][j]+routin[i][j-1];
+                routin[i] [j] = routin[i-1][j]+routin[i][j-1];
             }
         }
         return routin[m][n];
