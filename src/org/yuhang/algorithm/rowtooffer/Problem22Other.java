@@ -1,6 +1,6 @@
 package org.yuhang.algorithm.rowtooffer;
 
-import com.chinalife.springmvc.algorithm.rowtooffer.Problem22.TreeNode;
+import org.yuhang.algorithm.rowtooffer.Problem22.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

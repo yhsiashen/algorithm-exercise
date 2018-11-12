@@ -1,7 +1,7 @@
 package org.yuhang.algorithm.rowtooffer;
 
 
-import com.chinalife.springmvc.algorithm.rowtooffer.Problem14.ListNode;
+import org.yuhang.algorithm.rowtooffer.Problem14.ListNode;
 
 import java.util.Stack;
 

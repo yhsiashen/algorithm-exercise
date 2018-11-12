@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.dynamicalgorithm;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /**
  * 动态规划，三角形问题递归版

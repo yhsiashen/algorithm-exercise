@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.dynamicalgorithm;
+package org.yuhang.algorithm.leetcode.dynamicplan;
 
 /** 动态规划算法  求数组和的最大值
  * Created by yuhang on 2018/3/25.
