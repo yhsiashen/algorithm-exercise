@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicplan;
 /** 动态规划算法 (LCS-最长公共子序列)
  * Created by yuhang on 2018/3/22.
  */
-public class DynamicProgramming {
+public class DynamicProgrammingLCS {
 
     private static int[][] c ;
 
