@@ -29,7 +29,7 @@ public class ProblemMinMoney {
                 left = Integer.MAX_VALUE;
                 if (j - arr[i] >= 0 && dp[i][j - arr[i]] != Integer.MAX_VALUE) {
                     left = dp[i][j - arr[i]] + 1;
-                }
+}
                 dp[i][j] = Math.min(left,dp[i-1][j]);
             }
         }

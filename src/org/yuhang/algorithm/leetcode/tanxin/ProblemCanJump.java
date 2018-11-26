@@ -1,6 +1,6 @@
 package org.yuhang.algorithm.leetcode.tanxin;
 
-/** 判断能否从数组第一位跳到最后一位(贪心法)
+/** 判断能否从数组第一位跳到最后一位(贪心法) 55
  * Created by chinalife on 2018/10/15.
  */
 public class ProblemCanJump {

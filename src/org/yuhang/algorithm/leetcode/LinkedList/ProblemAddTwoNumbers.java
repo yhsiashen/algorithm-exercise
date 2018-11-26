@@ -16,62 +16,35 @@ public class ProblemAddTwoNumbers {
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        if (l1 == null && l2 == null)
+        if(l1==null&&l2==null)
             return null;
-        if (l1 == null)
-            return l2;
-        if (l2 == null)
-            return l1;
-        //反转两链表
-        l1=reserveList(l1);
-        l2=reserveList(l2);
+        //p,q分别指向l1,l2的头结点
+        ListNode p = l1;
+        ListNode q = l2;
         //结果链表
-        ListNode resultNode = null;
-        //顺序遍历两链表,将所有位数取出,构成数字
-        int suml1 = 0;
-        int suml2 = 0;
-        while (l1 != null) {
-            suml1 = suml1 * 10 + l1.val;
-            l1 = l1.next;
+        ListNode result =new ListNode(3);
+        ListNode resultHead = result;
+        //进位
+        int carry = 0;
+        //遍历l1,l2,逐位相加
+        while (p != null || q != null) {
+            int x = p == null ? 0 : p.val;
+            int y = q == null ? 0 : q.val;
+            int sum = x + y + carry;
+            carry = sum / 10;
+            int z = sum % 10;
+            resultHead.next = new ListNode(z);
+            resultHead = resultHead.next;
+            p = p == null ? null : p.next;
+            q = q == null ? null : q.next;
         }
-        while (l2 != null) {
-            suml2 = suml2 * 10 + l2.val;
-            l2 = l2.next;
-        }
-        int sum = suml1 + suml2;
-        ListNode head = null;
-        if(sum == 0)
-            return new ListNode(0);
-        //将sum结果存入链表中
-        while (sum>0){
-            if(resultNode==null){
-                resultNode = new ListNode(sum%10);
-                 head = resultNode;
-                sum/=10;
-            }else {
-                resultNode.next = new ListNode(sum%10);
-                resultNode = resultNode.next;
-                sum/=10;
-            }
+        if(carry==1){
+            resultHead.next= new ListNode(1);
         }
 
-        return head;
+        return result.next;
     }
 
-    //链表反转
-    public ListNode reserveList(ListNode list) {
-        ListNode currentList = list;
-        ListNode preNode = null;
-        ListNode nextNode;
-        while (currentList != null) {
-            nextNode = currentList.next;
-            //链表反转即将前驱节点作为后置节点
-            currentList.next = preNode;
-            preNode = currentList;
-            currentList = nextNode;
-        }
-        return preNode;
-    }
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2);
@@ -80,6 +53,6 @@ public class ProblemAddTwoNumbers {
         ListNode l2 = new ListNode(5);
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
-        new ProblemAddTwoNumbers().addTwoNumbers(l1,l2);
+        new ProblemAddTwoNumbers().addTwoNumbers(l1, l2);
     }
 }
