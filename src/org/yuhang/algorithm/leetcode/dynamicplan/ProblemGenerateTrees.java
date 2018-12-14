@@ -15,7 +15,13 @@ public class ProblemGenerateTrees {
       TreeNode(int x) { val = x; }
   }
     public List<TreeNode> generateTrees(int n) {
+        //n个数字可构成的二叉搜索树的集合
         List<TreeNode> nodeList = new ArrayList<>();
+        if(n<1)
+            return nodeList;
+        for (int i = 1; i <= n; i++) {
+               
+        }
         return nodeList;
     }
 }

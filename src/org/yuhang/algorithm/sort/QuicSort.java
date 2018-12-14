@@ -28,13 +28,10 @@ public class QuicSort {
     }
 
     public static void main(String[] args) {
-//          int[] a = {1,23,5,0,231,90,2,8,10,12};
-//          quicSort(a,0,a.length-1);
-//        for (int i :a) {
-//            System.out.println(i);}
-        int i =50;
-        int j = 50>>>3;
+          int[] a = {1,23,5,0,231,90,2,8,10,12};
+          quicSort(a,0,a.length-1);
+        for (int i :a) {
+            System.out.println(i);}
 
-        System.out.println(j);
     }
 }
