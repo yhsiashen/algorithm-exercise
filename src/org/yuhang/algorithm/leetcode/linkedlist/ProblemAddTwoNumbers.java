@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.LinkedList;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
  * 将存放在链表中的两数相加

@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.LinkedList;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
  * 合并K个排序链表 两两链表逐个合并 23

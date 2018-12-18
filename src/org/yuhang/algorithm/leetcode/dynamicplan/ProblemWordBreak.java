@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicplan;
 import java.util.ArrayList;
 import java.util.List;
 
-/**  单词拆分
+/**  单词拆分  139
  * Created by chinalife on 2018/10/13.
  */
 public class ProblemWordBreak {

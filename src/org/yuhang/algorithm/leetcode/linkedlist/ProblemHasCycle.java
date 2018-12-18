@@ -1,6 +1,4 @@
-package org.yuhang.algorithm.leetcode.LinkedList;
-
-import java.util.List;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
  * 判断链表是否有环
