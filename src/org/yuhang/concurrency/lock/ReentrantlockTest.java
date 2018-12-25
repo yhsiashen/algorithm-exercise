@@ -1,6 +1,6 @@
 package org.yuhang.concurrency.lock;
 
-import org.yuhang.annotation.ThreadUnsafe;
+
 
 import java.util.concurrent.*;
 import java.util.concurrent.locks.Lock;
@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by chinalife on 2018/5/23.
  */
-@ThreadUnsafe
+
 public class ReentrantlockTest {
 
     //线程总数

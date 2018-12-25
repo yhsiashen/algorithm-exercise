@@ -1,12 +1,12 @@
 package org.yuhang.concurrency.singleton;
 
-import org.yuhang.annotation.ThreadSafe;
+
 
 /** 懒汉模式优化
  *  volatile+double-check机制实现线程安全的懒汉单例模式
  * Created by chinalife on 2018/5/24.
  */
-@ThreadSafe
+
 public class Singleton4 {
 
     // new 对象时cpu和内存级别发生的操作：

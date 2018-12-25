@@ -1,6 +1,5 @@
 package org.yuhang.concurrency;
 
-import org.yuhang.annotation.ThreadUnsafe;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -10,7 +9,7 @@ import java.util.concurrent.Semaphore;
 /**
  * Created by chinalife on 2018/5/23.
  */
-@ThreadUnsafe
+
 public class ConcurrencyTest {
     //线程总数
     public static int clinetTotal = 5000;

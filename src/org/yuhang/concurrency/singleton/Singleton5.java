@@ -1,11 +1,11 @@
 package org.yuhang.concurrency.singleton;
 
-import org.yuhang.annotation.ThreadSafe;
 
-/** 枚举构造单例类
+
+/** 枚举构造单例类 线程安全
  * Created by chinalife on 2018/5/24.
  */
-@ThreadSafe
+
 public class Singleton5 {
 
     private Singleton5(){

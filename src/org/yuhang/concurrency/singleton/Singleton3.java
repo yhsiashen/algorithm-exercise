@@ -1,11 +1,10 @@
 package org.yuhang.concurrency.singleton;
 
-import org.yuhang.annotation.ThreadSafe;
 
 /** 懒汉模式优化- 在方法上加锁来实现线程安全，不过可能会造成性能开销
  * Created by chinalife on 2018/5/24.
  */
-@ThreadSafe
+
 public class Singleton3 {
 
     private Singleton3(){

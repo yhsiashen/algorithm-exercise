@@ -1,7 +1,6 @@
 package org.yuhang.concurrency.atomic;
 
-import org.yuhang.annotation.ThreadSafe;
-import org.yuhang.annotation.ThreadUnsafe;
+
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -12,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by chinalife on 2018/5/23.
  */
-@ThreadSafe
+
 public class AtomicTest1 {
 
     public static int clinetTotal = 5000;
