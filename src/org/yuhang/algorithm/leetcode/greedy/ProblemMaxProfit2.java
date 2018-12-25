@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.tanxin;
+package org.yuhang.algorithm.leetcode.greedy;
 
 /** 股票买卖的最佳时机2  122
  * Created by chinalife on 2018/12/6.

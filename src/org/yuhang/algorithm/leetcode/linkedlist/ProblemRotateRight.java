@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.LinkedList;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 /** 给定一个链表，将它的每个位置旋转k位 61
  * Created by chinalife on 2018/10/22.

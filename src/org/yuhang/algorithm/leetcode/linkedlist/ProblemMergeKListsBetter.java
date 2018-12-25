@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.LinkedList;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 import java.util.PriorityQueue;
 

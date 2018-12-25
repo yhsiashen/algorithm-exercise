@@ -1,11 +1,11 @@
-package org.yuhang.algorithm;
+package org.yuhang.algorithm.leetcode.dfs;
 
 import java.util.Scanner;
 
 /**
  * Created by chinalife on 2018/11/19.
  */
-public class Main1 {
+public class ProblemDFS {
 
     public static int[][] graph;
     public static int height = 0;
