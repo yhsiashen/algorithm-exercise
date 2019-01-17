@@ -3,7 +3,7 @@ package org.yuhang.concurrency.singleton;
 
 /**四种单例的写法
  * 懒汉模式- 对象第一次使用时new
- *  线程不安全-
+ * 线程不安全
  * Created by chinalife on 2018/5/24.
  */
 

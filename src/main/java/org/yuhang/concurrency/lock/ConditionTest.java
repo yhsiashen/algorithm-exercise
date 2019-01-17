@@ -21,7 +21,7 @@ public class ConditionTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }finally {
-                System.out.println("get signal");
+                System.out.println("get signal & release lock");
                 lock.unlock();
             }
         }).start();
@@ -34,8 +34,13 @@ public class ConditionTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            condition.signalAll();
             System.out.println("send signal");
+            condition.signalAll();
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             lock.unlock();
         }).start();
     }
