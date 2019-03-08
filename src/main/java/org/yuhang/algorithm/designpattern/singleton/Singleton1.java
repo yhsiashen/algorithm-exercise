@@ -1,4 +1,4 @@
-package org.yuhang.concurrency.singleton;
+package org.yuhang.algorithm.designpattern.singleton;
 
 
 /**四种单例的写法

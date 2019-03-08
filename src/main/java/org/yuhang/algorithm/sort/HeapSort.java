@@ -34,7 +34,7 @@ public class HeapSort {
          * @param a,n
          */
         public void initHeap(int[] a,int n) {
-            for (int i = n / 2; i >= 1; i--) {
+            for (int i = n >>2; i >= 1; i--) {
                 heapify(a, n, i);
             }
         }
@@ -47,8 +47,8 @@ public class HeapSort {
         public void heapify(int[] a, int n, int i) {
             while (true) {
                 int maxPos = i;
-                if (i * 2 <= n && a[i] < a[i * 2]) maxPos = i * 2;
-                if (i * 2 + 1 <= n && a[maxPos] < a[i * 2 + 1]) maxPos = i * 2 + 1;
+                if (i <<2 <= n && a[i] < a[i<<2]) maxPos = i<<2;
+                if (i<<2 + 1 <= n && a[maxPos] < a[i<<2 + 1]) maxPos = i<<2 + 1;
                 if (maxPos == i) break;
                 swapInt(a, i, maxPos);
                 i = maxPos;
@@ -71,9 +71,9 @@ public class HeapSort {
             a[count] = val;
             int tmp = count;
             //不断比较节点和父节点大小,直到找到对应位置
-            while (a[tmp] > a[tmp / 2] && tmp / 2 != 0) {
-                swapInt(a, tmp, tmp / 2);
-                tmp = tmp / 2;
+            while (a[tmp] > a[tmp >>2] && tmp >>2 != 0) {
+                swapInt(a, tmp, tmp >>2);
+                tmp = tmp >>2;
             }
         }
 

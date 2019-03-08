@@ -15,9 +15,9 @@ public class ReflectTest {
         String className = reader.readLine();
         String methodName = reader.readLine();
         Class clazz = Class.forName(className);
-        Method method = clazz.getDeclaredMethod(methodName,"112".getClass());
+        Method method = clazz.getDeclaredMethod(methodName);
         try {
-            System.out.println(method.invoke(clazz.newInstance(),"110"));
+            System.out.println(method.invoke(clazz.newInstance()));
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
