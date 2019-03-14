@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicplan;
 /** 动态规划算法  求数组和的最大值
  * Created by yuhang on 2018/3/25.
  */
-public class DynamicProgrammingMaxSum {
+public class ProblemMaxSum {
 
     private static int getMaxSum(int[] a,int i){
         if(i<0){

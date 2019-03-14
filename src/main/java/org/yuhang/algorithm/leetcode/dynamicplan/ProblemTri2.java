@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicplan;
 /** 动态规划-三角形问题记忆性递归版
  * Created by chinalife on 2018/6/22.
  */
-public class DynamicProgrammingTri2 {
+public class ProblemTri2 {
     private static int n =7;
 
     private static int DMAX[][] = {{3},{2,6},{4,3,5},{6,2,1,8},{0,2,1,5,4},{9,1,2,9,0,4},{9,1,2,9,0,4,8}};

@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicplan;
 /**
  * 动态规划，三角形问题递归版
  */
-public class DynamicProgrammingTri1 {
+public class ProblemTri1 {
 
     private static int n =7;
 
