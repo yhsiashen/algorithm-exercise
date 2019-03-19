@@ -1,7 +1,7 @@
 package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
- * 将存放在链表中的两数相加
+ * 将存放在链表中的两数相加,双指针法
  * Created by chinalife on 2018/11/12.
  */
 public class ProblemAddTwoNumbers {
