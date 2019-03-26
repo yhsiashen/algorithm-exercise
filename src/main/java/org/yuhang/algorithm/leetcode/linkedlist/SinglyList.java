@@ -1,7 +1,7 @@
 package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
- * 单链表增删,反转等操作
+ * 单链表增删,反转,获得中间节点等操作
  */
 public class SinglyList {
 
@@ -81,6 +81,26 @@ public class SinglyList {
            currentList = nextList;
         }
         return headNode;
+    }
+
+
+    /**
+     * 求链表的中间节点
+     * @param list
+     * @return
+     */
+    public Node getMidNode(Node list){
+        if(list == null)
+            return null;
+        Node fast = list;
+        Node slow = list;
+        while (slow!=null && fast.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast==null)
+                break;
+        }
+        return slow;
     }
 
     public static void main(String[] args) {
