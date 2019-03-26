@@ -1,0 +1,15 @@
+@startuml
+
+
+interface Map
+interface SortedMap
+
+Map <|-- SortedMap
+Map <|.. HashTable
+Map <|.. HashMap
+HashMap <|-- LinkedHashMap
+SortedMap <|..TreeMap
+
+
+
+@enduml
