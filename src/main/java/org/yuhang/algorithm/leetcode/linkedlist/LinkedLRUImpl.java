@@ -1,5 +1,9 @@
-package org.yuhang.algorithm.collections;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
+/**
+ * 单链表实现LRU队列
+ * 队列中的元素是单个值 ,类型为 E
+ */
 public class LinkedLRUImpl<E> {
 
     /**
@@ -106,6 +110,20 @@ public class LinkedLRUImpl<E> {
         }
     }
 
+    @Override
+    public String toString() {
+       StringBuilder sb = new StringBuilder();
+       if(head!=null){
+           Node p = head;
+           while (p!=null){
+               sb.append(p.element);
+               sb.append(" ");
+               p = p.nextNode;
+           }
+       }
+       return sb.toString();
+    }
+
     /**
      * 节点定义
      * @param <E>
@@ -132,6 +150,6 @@ public class LinkedLRUImpl<E> {
         queue.add("22");
         queue.add("33");
         queue.add("44");
-        System.out.println("11");
+        System.out.println(queue.toString());
     }
 }

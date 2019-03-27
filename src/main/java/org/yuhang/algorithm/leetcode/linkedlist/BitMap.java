@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.collections;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 /**
  * 位图与布隆过滤器

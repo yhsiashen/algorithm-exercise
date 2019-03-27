@@ -67,7 +67,9 @@ public class  BinarySearchTree extends Node {
          }
     }
 
-    //中序遍历二叉搜索树得到有序排列(递归法)  左→根→右
+    /**递归法：中序遍历二叉搜索树得到有序数列  左→根→右
+     * @param root
+     */
     public void printTreeByRec(Node root){
         if(root.left!=null){
             printTree(root.left);
@@ -78,7 +80,10 @@ public class  BinarySearchTree extends Node {
         }
     }
 
-    //中序遍历二叉搜索树得到有序排列(非递归法)
+    /**
+     * 非递归法: 中序遍历二叉搜索树得到有序数列
+     * @param root
+     */
     public void printTree(Node root){
         //构造一个空栈
         Stack<Node> stack = new Stack<Node>();

@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.collections;
+package org.yuhang.algorithm.leetcode.linkedlist;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

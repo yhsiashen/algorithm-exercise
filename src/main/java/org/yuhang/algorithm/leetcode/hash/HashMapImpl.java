@@ -2,12 +2,12 @@ package org.yuhang.algorithm.leetcode.hash;
 
 
 /**
- * 基于链表法解决hash冲突的散列表
+ * 基于链表法解决hash冲突的散列表(不扩容,链表可无限增加)
  */
 public class HashMapImpl<K,V> {
 
     /** 数组存Entry */
-    private Entry[] elements;
+    private Entry<K,V>[] elements;
 
     /** 数组容量*/
     private int capacity;
@@ -25,37 +25,35 @@ public class HashMapImpl<K,V> {
     }
 
     public void put(K key,V value) throws Exception {
-        if(key==null){
-            throw new Exception("key must not be null!");
+        if(value==null){
+            throw new Exception("value must not be null!");
         }
-
-        int hash = hash(key);
+        //先求hash值的绝对值，然后对数组长度取模
+        int hash = (hash(key) & 0x7FFFFFFF)% size();
         if(elements[hash] == null){
             elements[hash]= new Entry<K,V>(key,value);
         }else{
-            //若此槽位已被占用，则从头结点开始遍历，添加或更新结点值
+            //若此槽位已被占用，则从头结点开始遍历，添加或更新结点值,更新完直接退出
             Entry<K,V> headEntry = elements[hash];
-            while (headEntry!=null){
+            while (headEntry.nextEntry!=null){
                 if(headEntry.key.equals(key)){
                     headEntry.value = value;
-                    break;
+                    return;
                 }
                 headEntry = headEntry.nextEntry;
             }
-            //若遍历完还没找到相同key的结点，则在队尾加结点
-            if(headEntry==null)
-                headEntry = new Entry(key,value);
-
+            //判断尾节点key值与key是否一致，不一致则在后面加节点
+            if(headEntry.key.equals(key)){
+                headEntry.value = value;
+            }else{
+                headEntry.nextEntry = new Entry(key,value);
+            }
         }
     }
 
 
-    public V get(K key) throws Exception {
-        if(key==null){
-            throw new Exception("key must not be null!");
-        }
-
-        int hash = hash(key);
+    public V get(K key)  {
+        int hash = (hash(key) & 0x7FFFFFFF)% size();
         if(elements[hash]==null){
             return null;
         }else{
@@ -74,12 +72,13 @@ public class HashMapImpl<K,V> {
 
 
     /**
-     * 求key的hash值,对数组长度取模
+     * 求key的hash值
      * @param key
      * @return
      */
     private int hash(K key){
-        return key.hashCode()%size();
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
     }
 
 
@@ -96,11 +95,17 @@ public class HashMapImpl<K,V> {
 
     public static void main(String[] args) throws Exception {
           HashMapImpl<String,String> hashMap = new HashMapImpl<>();
-//          hashMap.put("yuhang","123");
+//          HashMap<String,String> map = new HashMap<>();
+//          map.put("user_id","123");
+//          hashMap.put("user_id","123");
 //          hashMap.put("xiaoming","234");
+//          hashMap.put("123","sha");
 //          hashMap.put("yuhang","999");
-//        System.out.println(hashMap.get("yuhang"));
-        System.out.println("yuhang".hashCode()^ ("yuhang".hashCode() >>> 16));
+//          hashMap.put("ajh","111");
+//          hashMap.put("qwuh1","22");
+//          System.out.println(hashMap.get("yuhang"));
+
+
 
 
 
