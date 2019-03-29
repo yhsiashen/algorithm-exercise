@@ -5,8 +5,32 @@ import java.util.Stack;
 /** 二叉搜索树
  * Created by yuhang on 2018/3/20.
  */
-public class  BinarySearchTree extends Node {
+public class  BinarySearchTree {
+
+
+
     public Node root;
+
+    /**
+     * 定义一个有状态的二叉树节点，用于非递归遍历BST
+     */
+    public static class Node {
+        public int data;
+        public Node left;
+        public Node right;
+        public int state;
+
+        public Node(){
+
+        }
+
+        public Node(int data){
+            this.data = data;
+        }
+
+
+    }
+
 
     //构造根节点为root的二叉搜索树
     public BinarySearchTree(Node root){

@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.dfs;
+package org.yuhang.algorithm.leetcode.binarytree;
 
 /**
  * 验证二叉树是否为二叉搜索树 98

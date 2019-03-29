@@ -1,7 +1,7 @@
-package org.yuhang.algorithm.leetcode.dfs;
+package org.yuhang.algorithm.leetcode.binarytree;
 
 /**
- * Created by chinalife on 2018/11/23.
+ * 判断一棵树是否为平衡二叉树(左右子树相差不超过1)
  */
 public class ProblemIsBalancedTree {
 

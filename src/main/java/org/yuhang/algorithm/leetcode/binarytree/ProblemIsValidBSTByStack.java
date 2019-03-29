@@ -1,12 +1,12 @@
-package org.yuhang.algorithm.leetcode.dfs;
+package org.yuhang.algorithm.leetcode.binarytree;
 
 import java.util.Stack;
 
 /**
- * Created by chinalife on 2018/11/23.
+ * 验证二叉树是否为二叉搜索树 98
  */
 
-public class ProblemIsValidBST1 {
+public class ProblemIsValidBSTByStack {
 
     public static class TreeNode {
         int val;
@@ -26,6 +26,12 @@ public class ProblemIsValidBST1 {
         return midOrderTree(root, stack);
     }
 
+    /**
+     * 用栈维护一个从小到大的队列，若比较当时的value比栈顶元素小，则直接返回错
+     * @param node
+     * @param stack
+     * @return
+     */
     public boolean midOrderTree(TreeNode node, Stack<Integer> stack) {
         // 判断左子树是否为有序,若不为则不是BST
         if (node.left != null) {
@@ -55,6 +61,6 @@ public class ProblemIsValidBST1 {
     public static void main(String[] args) {
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(1);
-        System.out.println(new ProblemIsValidBST1().isValidBST(node));
+        System.out.println(new ProblemIsValidBSTByStack().isValidBST(node));
     }
 }

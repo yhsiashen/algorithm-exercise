@@ -1,7 +1,7 @@
-package org.yuhang.algorithm.leetcode.dfs;
+package org.yuhang.algorithm.leetcode.binarytree;
 
 /**
- * Created by chinalife on 2018/11/23.
+ * 求二叉树的最大深度
  */
 public class ProblemMaxDepth {
 
