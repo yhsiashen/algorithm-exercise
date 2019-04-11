@@ -1,9 +1,11 @@
+package org.yuhang.concurrency.deadlock;
+
 import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static java.lang.Thread.interrupted;
 
-public class Main {
+public class DeadLock1 {
 
     static ReentrantLock lock =  new ReentrantLock();
 

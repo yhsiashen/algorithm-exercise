@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.binarytree;
+package org.yuhang.algorithm.leetcode.graph;
 
 import java.util.HashMap;
 import java.util.Map;

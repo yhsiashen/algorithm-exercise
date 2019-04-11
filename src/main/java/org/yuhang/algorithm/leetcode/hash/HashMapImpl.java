@@ -25,6 +25,7 @@ public class HashMapImpl<K,V> {
     }
 
     public void put(K key,V value) throws Exception {
+        // hashmap的value不为null，key可以为null，其hash值为0
         if(value==null){
             throw new Exception("value must not be null!");
         }
