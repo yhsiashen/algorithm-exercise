@@ -1,11 +1,17 @@
 package org.yuhang.algorithm.leetcode.linkedlist;
 
+
+import java.util.PriorityQueue;
+
 /**
- * 合并K个排序链表 两两链表逐个合并 23
- * Created by chinalife on 2018/11/27.
+ * 合并K个有序链表，优先队列(小顶堆) 23
  */
 public class ProblemMergeKLists {
 
+
+    /**
+     * 链表定义
+     */
     public static class ListNode {
         int val;
         ListNode next;
@@ -16,52 +22,56 @@ public class ProblemMergeKLists {
     }
 
 
-    public ListNode mergeKLists(ListNode[] lists) {
-        if(lists ==null || lists.length==0)
+    /**
+     * 合并lists中的链表
+     * @param lists
+     * @return
+     */
+    public ListNode mergeKLists(ListNode[] lists){
+        if(lists==null || lists.length==0)
             return null;
-        ListNode currentresult = lists[0];
-        for (int i = 1; i < lists.length; i++) {
-            currentresult = mergeTwoLists(currentresult,lists[i]);
+        //结果链表
+        ListNode resultList=  new ListNode(0);
+        //结果链表的头链表
+        ListNode headResultList = resultList;
+
+        //小顶堆优先队列
+        PriorityQueue<ListNode> queue = new PriorityQueue<>((o1, o2) -> {
+            if(o1.val > o2.val){
+                return 1;
+            }else if(o1.val == o2.val){
+                return 0;
+            }else{
+                return -1;
+            }
+        });
+
+        //将lists迭代添加到堆中
+        for (ListNode listNode: lists) {
+            if(listNode!=null) {
+                queue.offer(listNode);
+            }
         }
-        return currentresult;
-    }
-
-
-    public ListNode mergeTwoLists(ListNode l1,ListNode l2){
-        //l1和l2的头指针
-        ListNode p = l1;
-        ListNode q = l2;
-
-        ListNode result = new ListNode(1);
-        //result的头指针
-        ListNode current = result;
-        while (p!=null||q!=null){
-           if(p==null){
-               current.next = new ListNode(q.val);
-               q=q.next;
-               current = current.next;
-           }else if(q==null){
-               current.next = new ListNode(p.val);
-               p = p.next;
-               current = current.next;
-           }else {
-               if(p.val<=q.val){
-                   current.next = new ListNode(p.val);
-                   p = p.next;
-                   current = current.next;
-               }else {
-                   current.next = new ListNode(q.val);
-                   q = q.next;
-                   current = current.next;
-               }
-           }
+        //不断poll queue中最小的元素加入结果队列
+        while (!queue.isEmpty()) {
+            //取出最小的头链表
+            ListNode minListNode = queue.poll();
+            ListNode minListNodeNext = minListNode.next;
+            minListNode.next = null;
+            headResultList.next = minListNode;
+            headResultList = headResultList.next;
+            //将值最小的链表的下个节点重新加入堆中
+            if(minListNodeNext!=null) {
+                queue.offer(minListNodeNext);
+            }
         }
 
-        return result.next;
+        return resultList.next;
     }
 
     public static void main(String[] args) {
         ListNode[] lists = new ListNode[3];
+
         ListNode listNode1 = new ListNode(1);
         listNode1.next = new ListNode(4);
         listNode1.next.next = new ListNode(5);
@@ -78,4 +88,6 @@ public class ProblemMergeKLists {
 
         new ProblemMergeKLists().mergeKLists(lists);
     }
+
+
 }
