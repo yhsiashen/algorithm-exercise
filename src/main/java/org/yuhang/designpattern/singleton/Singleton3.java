@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.designpattern.singleton;
+package org.yuhang.designpattern.singleton;
 
 
 /** 懒汉模式优化- 在方法上加锁来实现线程安全，不过可能会造成性能开销

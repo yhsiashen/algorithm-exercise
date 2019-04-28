@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.designpattern.reflect;
+package org.yuhang.javabase.reflect;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -4,7 +4,7 @@ package org.yuhang.algorithm.leetcode.backtracealgo;
 import java.util.*;
 
 /**
- * 求数组的所有子集  78
+ * 求不重复的数组的所有子集  78
  */
 public class ProblemSubSet {
 
@@ -12,6 +12,11 @@ public class ProblemSubSet {
     List<List<Integer>> allSolves = new ArrayList<>();
     int length = 0;
 
+    /**
+     * 递归法
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> subsets(int[] nums) {
         if(nums.length == 0)
             return allSolves;

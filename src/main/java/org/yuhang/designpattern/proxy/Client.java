@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.designpattern.proxypattern;
+package org.yuhang.designpattern.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

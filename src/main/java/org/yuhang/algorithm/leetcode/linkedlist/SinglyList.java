@@ -70,17 +70,17 @@ public class SinglyList {
              return null;
         Node currentList = list;
         Node preList = null;
-        Node headNode = null;
+        Node result = null;
         while (currentList !=null){
            Node nextList = currentList.next;
            if(nextList==null)
-               headNode = currentList;
+               result = currentList;
            // 将目前节点的下个节点指向preList节点
            currentList.next = preList;
            preList = currentList;
            currentList = nextList;
         }
-        return headNode;
+        return result;
     }
 
 
