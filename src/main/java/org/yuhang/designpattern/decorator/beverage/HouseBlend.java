@@ -1,6 +1,4 @@
-package org.yuhang.designpattern.deractor.beverage;
-
-import org.yuhang.designpattern.deractor.beverage.Beverage;
+package org.yuhang.designpattern.decorator.beverage;
 
 public class HouseBlend extends Beverage {
 

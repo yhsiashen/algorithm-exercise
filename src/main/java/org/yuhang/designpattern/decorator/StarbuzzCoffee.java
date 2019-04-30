@@ -1,9 +1,9 @@
-package org.yuhang.designpattern.deractor;
+package org.yuhang.designpattern.decorator;
 
-import org.yuhang.designpattern.deractor.beverage.Beverage;
-import org.yuhang.designpattern.deractor.beverage.Espresso;
-import org.yuhang.designpattern.deractor.condiment.Mocha;
-import org.yuhang.designpattern.deractor.condiment.Whip;
+import org.yuhang.designpattern.decorator.beverage.Beverage;
+import org.yuhang.designpattern.decorator.beverage.Espresso;
+import org.yuhang.designpattern.decorator.condiment.Mocha;
+import org.yuhang.designpattern.decorator.condiment.Whip;
 
 /**
  * 星巴克订单系统

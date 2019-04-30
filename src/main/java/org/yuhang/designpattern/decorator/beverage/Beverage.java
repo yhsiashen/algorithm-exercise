@@ -1,4 +1,4 @@
-package org.yuhang.designpattern.deractor.beverage;
+package org.yuhang.designpattern.decorator.beverage;
 
 
 /**

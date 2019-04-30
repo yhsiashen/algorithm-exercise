@@ -1,8 +1,7 @@
-package org.yuhang.designpattern.deractor.condiment;
+package org.yuhang.designpattern.decorator.condiment;
 
 
-import org.yuhang.designpattern.deractor.beverage.Beverage;
-import org.yuhang.designpattern.deractor.condiment.CondimentDecorator;
+import org.yuhang.designpattern.decorator.beverage.Beverage;
 
 /**
  * 摩卡是调料的一种
