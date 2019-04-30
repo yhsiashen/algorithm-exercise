@@ -1,0 +1,38 @@
+@startuml
+
+interface Subject
+interface Observer
+class WeatherDataSubject
+class ConcurrentDataStaticsDisplay
+class ForeastDataDisplay
+
+
+Subject <|.. WeatherDataSubject
+Observer <|.. ConcurrentDataStaticsDisplay
+Observer <|.. ForeastDataDisplay
+
+Observer *-- Subject
+
+interface Subject{
+  +registerObserver():void
+  +removeObserver():void
+  +notifyObservers():void
+}
+
+interface Observer{
+   +update(Object arg):void
+}
+
+class WeatherDataSubject{
+  -temperature
+  -humidity
+  -presurre
+  +setMeasurements():void
+}
+
+class ConcurrentDataStaticsDisplay{
+  -temperature
+  -humidity
+  -presurre
+}
+@enduml

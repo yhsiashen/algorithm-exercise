@@ -1,0 +1,12 @@
+@startuml
+
+class Duck
+class MallardDuck
+class RedheadDuck
+class RubberDuck
+interface FlyBehavior
+interface QuackBehavior
+class FlyWithWings
+class FlyNoWay
+
+@enduml
