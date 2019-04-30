@@ -12,23 +12,17 @@ public class ProblemDeleteDuplicates {
     }
 
 
-
     public ListNode deleteDuplicates(ListNode head) {
-         if(head == null) return null;
-         ListNode dummyNode = new ListNode(0);
-         dummyNode.next = head; //哨兵节点简化编程
-         int used = Integer.MAX_VALUE;
-         ListNode cur = head;
-         while (cur!=null){
-             if(cur.val==used){ //找到重复的则删除
-                 dummyNode.next = dummyNode.next.next;
-                 cur = dummyNode.next;
-                 continue; //直接continue考察cur节点
+         if(head==null) return null;
+         ListNode curNode = head;
+         while (curNode.next!=null){
+             if(curNode.val == curNode.next.val){
+                 curNode.next = curNode.next.next; //比较当前节点和下一节点的值，有重复则跳过
+             }else{
+                 curNode = curNode.next; //没有重复，则遍历下一个节点
              }
-             used = cur.val;
-             cur = cur.next;
-             dummyNode = dummyNode.next;
          }
+
          return head;
     }
 
