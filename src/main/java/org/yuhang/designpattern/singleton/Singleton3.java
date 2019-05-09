@@ -11,7 +11,7 @@ public class Singleton3 {
 
     }
 
-    private volatile static Singleton3 instance = null;
+    private  static Singleton3 instance = null;
 
     public synchronized static Singleton3 getInstance(){
         if(instance == null){
