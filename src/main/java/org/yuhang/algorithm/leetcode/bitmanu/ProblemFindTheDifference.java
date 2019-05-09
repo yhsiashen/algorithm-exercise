@@ -1,10 +1,7 @@
-package org.yuhang.algorithm.leetcode.string;
-
-import java.util.HashMap;
-import java.util.Map;
+package org.yuhang.algorithm.leetcode.bitmanu;
 
 /**
- * 找到两个字符串的不同字符  389
+ * 找到两个字符串的不同字符  389 位操作
  */
 public class ProblemFindTheDifference {
 

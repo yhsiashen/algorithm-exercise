@@ -1,10 +1,10 @@
-package org.yuhang.algorithm.leetcode.array;
+package org.yuhang.algorithm.leetcode.bitmanu;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 找出数组中只出现一次的数字  136
+ * 找出数组中只出现一次的数字  136 位操作
  */
 public class ProblemSingleNumber {
 

@@ -58,7 +58,7 @@ public class Array<E> {
     }
 
     /**
-     *
+     * 扩容为原来数组的2倍
      * @param capacity
      */
     private void ensureCapacity(int capacity){
