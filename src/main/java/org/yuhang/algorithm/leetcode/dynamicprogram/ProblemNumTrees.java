@@ -1,6 +1,6 @@
 package org.yuhang.algorithm.leetcode.dynamicprogram;
 
-/** 1,2...n个数可以构造的二叉搜索树的数目
+/** 1,2...n个数可以构造的二叉搜索树的数目 96
  * Created by chinalife on 2018/10/15.
  */
 public class ProblemNumTrees {
