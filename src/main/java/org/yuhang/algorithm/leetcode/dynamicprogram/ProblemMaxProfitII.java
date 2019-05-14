@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicprogram;
 /** 买卖股票的最佳时机1  121
  * Created by chinalife on 2018/12/6.
  */
-public class ProblemMaxProfit1 {
+public class ProblemMaxProfitII {
 
     public int maxProfit(int[] prices) {
          if(prices==null || prices.length == 0)
@@ -24,7 +24,7 @@ public class ProblemMaxProfit1 {
 
     public static void main(String[] args) {
         int[] prices = {7,1,5,3,6,4};
-        System.out.println(new ProblemMaxProfit1().maxProfit(prices));
+        System.out.println(new ProblemMaxProfitII().maxProfit(prices));
     }
 
 }

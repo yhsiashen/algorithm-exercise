@@ -1,11 +1,17 @@
 package org.yuhang.algorithm.leetcode.dynamicprogram;
 
-/** 股票买卖最大利润问题  easy
+/** 股票买卖最大利润问题  121
  * Created by chinalife on 2018/10/12.
  */
 public class ProblemMaxProfit {
 
-    public int maxProfit(int[] prices) {
+
+    /**
+     * 暴力法
+     * @param prices
+     * @return
+     */
+    public int maxProfit1(int[] prices) {
        int maxProfit = 0;
         for (int i = 0; i < prices.length; i++) {
             for (int j = i+1; j < prices.length; j++)

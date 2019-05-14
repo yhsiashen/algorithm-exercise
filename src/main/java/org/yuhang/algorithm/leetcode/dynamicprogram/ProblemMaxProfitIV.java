@@ -3,7 +3,7 @@ package org.yuhang.algorithm.leetcode.dynamicprogram;
 /** 股票买卖的最佳时机4  188  TODO
  * Created by chinalife on 2018/12/6.
  */
-public class ProblemMaxProfit4 {
+public class ProblemMaxProfitIV {
 
     public int maxProfit(int k, int[] prices) {
         if(prices==null || prices.length == 0 || k<=0)
