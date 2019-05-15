@@ -1,22 +1,19 @@
 package org.yuhang.algorithm.leetcode.stack;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
 
 
 /**
  * 用队列实现栈 225
  */
-public class MyStack {
+public class StackImplByQueue {
 
     Queue<Integer> in = new LinkedList<>();
     Queue<Integer> out = new LinkedList<>();
 
     /** Initialize your data structure here. */
-    public MyStack() {
+    public StackImplByQueue() {
 
     }
 
@@ -58,10 +55,10 @@ public class MyStack {
     }
 
     public static void main(String[] args) {
-        MyStack myStack = new MyStack();
-        myStack.push(1);
-        myStack.push(2);
-        myStack.push(3);
-        System.out.println(myStack.top());
+        StackImplByQueue stackImplByQueue = new StackImplByQueue();
+        stackImplByQueue.push(1);
+        stackImplByQueue.push(2);
+        stackImplByQueue.push(3);
+        System.out.println(stackImplByQueue.top());
     }
 }
