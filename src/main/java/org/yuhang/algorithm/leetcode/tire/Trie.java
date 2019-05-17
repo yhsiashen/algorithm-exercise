@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.binarytree;
+package org.yuhang.algorithm.leetcode.tire;
 
 /**
  * Trie树的实现

@@ -29,9 +29,9 @@ public class BloomFilter {
        int hash2 = hash2(val);
        int hash3 = hash3(val);
        // 将这些hash值分别找到在bit数组中存储的位置，标识为1
-       int index1 = (val >> 5) +1;
-       int index2 = (val >> 5) +1;
-       int index3 = (val >> 5) +1;
+       int index1 = (hash1 >> 5) +1;
+       int index2 = (hash2 >> 5) +1;
+       int index3 = (hash3 >> 5) +1;
        bits[index1] |= 1 << (val % 32);
        bits[index2] |= 1 << (val % 32);
        bits[index3] |= 1 << (val % 32);

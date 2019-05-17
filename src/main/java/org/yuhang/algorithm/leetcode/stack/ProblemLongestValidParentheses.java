@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.string;
+package org.yuhang.algorithm.leetcode.stack;
 
 
 import java.util.Stack;
@@ -15,7 +15,7 @@ public class ProblemLongestValidParentheses {
      * @return
      */
     public int longestValidParentheses(String s) {
-        if (s == null)
+        if (s == null || s.length() == 0)
             return 0;
         //有效括号的最长长度
         int res=0;
@@ -25,7 +25,7 @@ public class ProblemLongestValidParentheses {
         Stack<Integer> stack = new Stack<>();
         //遍历字符数组,遇到'('将索引压栈,遇到')'判断
         for (int i = 0; i <chars.length; i++) {
-            if(chars[i] == 40){
+            if(chars[i] == '('){
                 stack.push(i);
             }else{
                 if(stack.isEmpty()){
