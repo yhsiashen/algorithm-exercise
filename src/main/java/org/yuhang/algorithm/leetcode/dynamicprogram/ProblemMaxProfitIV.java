@@ -1,6 +1,6 @@
 package org.yuhang.algorithm.leetcode.dynamicprogram;
 
-/** 股票买卖的最佳时机4  188  TODO
+/** 股票买卖的最佳时机4-允许完成k笔交易 188
  * Created by chinalife on 2018/12/6.
  */
 public class ProblemMaxProfitIV {
@@ -8,37 +8,24 @@ public class ProblemMaxProfitIV {
     public int maxProfit(int k, int[] prices) {
         if(prices==null || prices.length == 0 || k<=0)
             return 0;
-        //二维数组dp[i][j]表示可以进行j次交易的情况下，长度为i的数组的最大利润
-        int[][] dp = new int[prices.length][k+1];
-        //初始边界
-        for (int i = 0; i < prices.length; i++) {
-            //只进行一次交易的情况下,求出各数组的最大利润
-            dp[i][1] = maxOneProfit(prices);
+        int[][] dp = new int[k][2]; // dp[i][0]表示第i笔交易买入的最大收益,dp[i][1]表示第i笔交易卖出的最大收益
+        for (int i = 0; i < k; i++) {
+            dp[i][0] = Integer.MAX_VALUE;
         }
 
-        //动态规划
-        for (int i = 1; i < prices.length; i++) {
-            for (int j = 2; j <= k; j++) {
-
+        for (int p:prices) {
+            dp[0][0] = Math.max(dp[0][0],-p);
+            dp[0][1] = Math.max(dp[0][1],dp[0][0]+p);
+            for (int i = 1; i < k; i++) {
+                dp[i][0] = Math.max(dp[i][0],dp[i-1][1]-p);
+                dp[i][1] = Math.max(dp[i][1],dp[i][0]+p);
             }
         }
 
-        return dp[prices.length-1][k];
+        return dp[k-1][1];
+
     }
 
 
-    public int maxOneProfit(int[] prices) {
-        if(prices==null || prices.length == 0)
-            return 0;
-        int minPrices = Integer.MAX_VALUE;
-        int maxProfit =0;
-        for (int i = 0; i <prices.length ; i++) {
-            if(prices[i] < minPrices){
-                minPrices = prices[i];
-            }else if(maxProfit < prices[i] - minPrices){
-                maxProfit = prices[i] - minPrices;
-            }
-        }
-        return maxProfit;
-    }
+
 }

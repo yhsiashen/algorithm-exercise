@@ -2,21 +2,21 @@ package org.yuhang.algorithm.leetcode.dynamicprogram;
 
 import java.util.Arrays;
 
-/** 买卖股票的最佳时机3,最多完成两笔交易 123
+/** 买卖股票的最佳时机3-允许完成最多两笔交易 123
  * Created by chinalife on 2018/12/6.
  */
 public class ProblemMaxProfitIII {
 
     /**
-     * 动态规划
+     * 动态规划-维护4个状态，依次动态规划
      * @param prices
      * @return
      */
     public int maxProfit(int[] prices){
-        int firstBuy = Integer.MIN_VALUE;//在该天第一次买入股票所获得的收益
-        int secondBuy = Integer.MIN_VALUE;//在该天第一个卖出股票所获得的收益
-        int firstSell = 0;//在该天第二次买入股票所获得的收益
-        int secondSell = 0;//在该天第二次卖出股票所获得的收益
+        int firstBuy = Integer.MIN_VALUE;//第一笔买入股票所获得的收益
+        int secondBuy = Integer.MIN_VALUE;//第一笔卖出股票所获得的收益
+        int firstSell = 0;//第二笔买入股票所获得的收益
+        int secondSell = 0;//第二笔卖出股票所获得的收益
         for (int i = 0; i < prices.length; i++) {
             firstBuy = Math.max(firstBuy,-prices[i]);
             firstSell = Math.max(firstSell,prices[i] - firstBuy);

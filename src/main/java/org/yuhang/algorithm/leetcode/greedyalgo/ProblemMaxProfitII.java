@@ -1,9 +1,9 @@
 package org.yuhang.algorithm.leetcode.greedyalgo;
 
-/** 股票买卖的最佳时机2  122
+/** 股票买卖的最佳时机02  122
  * Created by chinalife on 2018/12/6.
  */
-public class ProblemMaxProfit2 {
+public class ProblemMaxProfitII {
 
 
     public int maxProfit(int[] prices) {
@@ -21,7 +21,7 @@ public class ProblemMaxProfit2 {
 
     public static void main(String[] args) {
         int[] pri = {3,3,5,0,0,3,1,4};
-        System.out.println(new ProblemMaxProfit2().maxProfit(pri));
+        System.out.println(new ProblemMaxProfitII().maxProfit(pri));
 //        System.out.println(Arrays.toString(Arrays.copyOfRange(pri, 0, 3)));
     }
 }

@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.graph;
+package org.yuhang.algorithm.leetcode.graphBFSDFS;
 
 import java.util.*;
 
