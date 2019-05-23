@@ -16,7 +16,7 @@ public class ProblemMaxProfitIV {
         for (int p:prices) {
             dp[0][0] = Math.max(dp[0][0],-p);
             dp[0][1] = Math.max(dp[0][1],dp[0][0]+p);
-            for (int i = 1; i < k; i++) {
+            for (int i = 1; i < k; i++) { //动态规划，填充dp，找出第k笔交易卖出的最大收益
                 dp[i][0] = Math.max(dp[i][0],dp[i-1][1]-p);
                 dp[i][1] = Math.max(dp[i][1],dp[i][0]+p);
             }
