@@ -11,7 +11,7 @@ public class ProblemWordLadderII {
         List<List<String>> res = new ArrayList<>();
 
         Queue<Deque<String>> queue = new LinkedList<>();
-        Set<String> set = new HashSet<>(wordList);
+        Set<String> set = new HashSet<>(wordList);//将List转换为HashSet提高查询效率
         Deque<String> eachQueue = new LinkedList<>();
         eachQueue.add(beginWord);
         queue.offer(eachQueue);
@@ -33,7 +33,7 @@ public class ProblemWordLadderII {
                             Deque<String> theDeque = new LinkedList<>(firstQueue); //new一个队列，存储一条可能的路径
                             theDeque.offer(newStr);
                             queue.offer(theDeque);
-                            if(!newStr.equals(endWord)) set.remove(newStr); //将该词从set中移除
+//                            if(!newStr.equals(endWord)) set.remove(newStr); //将该词从set中移除
                         }
                     }
                 }
