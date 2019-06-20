@@ -31,6 +31,12 @@
            <artifactId>netty-all</artifactId> <!-- Use 'netty-all' for 4.0 or above -->
            <version>4.0.43.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>21.0</version>
+        </dependency>
     </dependencies>
 
 </project>
