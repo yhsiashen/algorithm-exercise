@@ -8,12 +8,9 @@ import java.util.concurrent.*;
 public class FutureTaskTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        FutureTask<String> futureTask = new FutureTask<String>(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                Thread.sleep(5000);
-                return "done";
-            }
+        FutureTask<String> futureTask = new FutureTask<String>(() -> {
+            Thread.sleep(5000);
+            return "done";
         });
 
         ExecutorService executorService = Executors.newCachedThreadPool();

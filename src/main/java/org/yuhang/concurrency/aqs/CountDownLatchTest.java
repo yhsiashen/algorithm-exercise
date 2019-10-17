@@ -3,6 +3,7 @@ package org.yuhang.concurrency.aqs;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by chinalife on 2018/5/26.
@@ -20,7 +21,7 @@ public class CountDownLatchTest {
                 try {
                     if(threadNum == 50 || threadNum == 51) {
                         countDownLatch.countDown();
-                        countDownLatch.await();
+                        countDownLatch.await(4, TimeUnit.SECONDS); //设超时时间
                     }
                     test(threadNum);
                 } catch (Exception e) {
@@ -31,7 +32,7 @@ public class CountDownLatchTest {
             });
         }
 
-        countDownLatch.await();
+        countDownLatch.await(2, TimeUnit.SECONDS); //设超时时间
         System.out.println("finish");
         executorService.shutdown();
     }

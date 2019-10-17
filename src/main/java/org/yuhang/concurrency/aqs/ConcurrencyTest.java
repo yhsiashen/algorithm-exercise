@@ -1,4 +1,4 @@
-package org.yuhang.concurrency;
+package org.yuhang.concurrency.aqs;
 
 
 import java.util.concurrent.CountDownLatch;
