@@ -26,22 +26,14 @@ public class ConditionTest {
             }
         }).start();
 
-        new Thread(()->{
-            lock.lock();
-            System.out.println("get lock");
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("send signal");
-            condition.signalAll();
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            lock.unlock();
-        }).start();
+        for (int i = 0; i <40 ; i++) {
+            new Thread(() -> {
+                lock.lock();
+                System.out.println("Thread:" + Thread.currentThread() + " get lock...");
+                System.out.println("send signal");
+                condition.signalAll();
+                lock.unlock();
+            }).start();
+        }
     }
 }

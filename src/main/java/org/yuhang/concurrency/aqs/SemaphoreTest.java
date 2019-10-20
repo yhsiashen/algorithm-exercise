@@ -11,13 +11,21 @@ public class SemaphoreTest {
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
-        final Semaphore semaphore = new Semaphore(3,false);
+        final Semaphore semaphore = new Semaphore(1,false);
+
         for (int i = 0; i < threadCount; i++) {
             final int threadNum = i;
             executorService.execute(()->{
                 try {
+                    if(threadNum==10){
+                        System.out.println("num=10时一个许可证被释放");
+                        test(threadNum);
+                        semaphore.release();
+                        return;
+                    }
                     //semaphore.tryAcquire(100,TimeUnit.MILLISECONDS
-                       semaphore.acquire();
+                       semaphore.acquire(); //线程一直阻塞，直到获取到1个许可证
+                       System.out.println("当前许可证:"+semaphore.availablePermits());
                        test(threadNum);
                        semaphore.release();
 
@@ -31,7 +39,7 @@ public class SemaphoreTest {
     }
 
     private static void test(int threadNum) throws Exception{
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         System.out.println("threadNum:"+threadNum);
 
     }
