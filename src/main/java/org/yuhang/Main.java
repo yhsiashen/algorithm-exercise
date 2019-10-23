@@ -1,21 +1,18 @@
 package org.yuhang;
 
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
-         Map<String,String> map = new HashMap<>();
-         map.put("1","2");
-         map.put("2","s");
-         map.put("3","m");
-        for (String key:map.keySet()) {
-            System.out.println(key);
-            if("2".equals(key)) map.put("2","3");
+        List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+        List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
+        for (String str: filtered){
+            System.out.println(str);
         }
-        System.out.println(map.get("2"));
+        Arrays.stream(new int[]{1,3,4,5,6}).filter(x -> x!=4).forEach(System.out::println);
     }
 }
 
