@@ -3,6 +3,7 @@ package org.yuhang.algorithm.leetcode.array;
 
 /**
  * 搜索旋转排序数组,要求时间复杂度logn,二分查找  LC33
+ * @tag:二分查找
  */
 public class ProblemSearchInRotatedSortedArray {
 
