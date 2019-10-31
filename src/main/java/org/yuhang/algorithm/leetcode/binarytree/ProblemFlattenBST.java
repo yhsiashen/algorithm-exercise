@@ -15,7 +15,10 @@ public class ProblemFlattenBST {
           TreeNode(int x) { val = x; }
       }
 
-
+    /**
+     * 将root右子树接到root左子树的最右节点的右子树上，然后将root左子树的最右节点接到root的右子树上
+     * @param root
+     */
     public void flatten(TreeNode root) {
         while (root !=null){
             //若左子树为null，直接考虑右节点
@@ -33,6 +36,21 @@ public class ProblemFlattenBST {
                 root = root.right; //进行下一个节点的展开
             }
         }
+    }
+
+    private TreeNode pre;
+
+    /**
+     * 递归，从最右子节点开始往回加节点
+     * @param root
+     */
+    public void flatten2(TreeNode root){
+          if(root == null) return;
+          flatten2(root.right);
+          flatten2(root.left);
+          root.right = pre; //用pre节点保存之前已接好的'链表'，将pre加到root的右子树上
+          root.left = null; //root左子树置空
+          pre = root; // pre指向root
     }
 
 

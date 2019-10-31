@@ -1,7 +1,8 @@
 package org.yuhang.algorithm.leetcode.binarytree;
 
-
-
+/**
+ * 填充每一个节点的下一个右侧节点指针II LC117
+ */
 public class ProblemNextRightPointersII {
 
     static class Node {
