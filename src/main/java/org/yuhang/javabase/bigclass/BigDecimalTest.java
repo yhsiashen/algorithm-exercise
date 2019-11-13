@@ -24,5 +24,9 @@ public class BigDecimalTest {
         System.out.println(bString);
 
         System.out.println(bigDecimal.add(new BigDecimal("2.1")));
+//        BigDecimal a = new BigDecimal("2");
+//        BigDecimal b = new BigDecimal("3");
+//        System.out.println(a.divide(b));
+
     }
 }

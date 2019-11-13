@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 找出数组中只出现一次的数字  136 位操作
+ * 找出数组中只出现一次的数字  LC136
+ * @tag:位运算
  */
 public class ProblemSingleNumber {
 
@@ -17,6 +18,7 @@ public class ProblemSingleNumber {
         int res = 0;
         for (int i = 0; i < nums.length; i++) {
             res = res ^ nums[i];
+            res =  ~nums[i];
         }
         return res;
     }
