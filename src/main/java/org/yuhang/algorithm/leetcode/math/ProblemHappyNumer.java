@@ -3,6 +3,7 @@ package org.yuhang.algorithm.leetcode.math;
 
 /**
  * 判断一个数是不是快乐数 LC202
+ * @tag:双指针
  */
 public class ProblemHappyNumer {
 

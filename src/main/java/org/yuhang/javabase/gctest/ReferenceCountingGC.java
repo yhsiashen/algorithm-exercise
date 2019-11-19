@@ -1,4 +1,4 @@
-package org.yuhang.gctest;
+package org.yuhang.javabase.gctest;
 
 public class ReferenceCountingGC {
 
