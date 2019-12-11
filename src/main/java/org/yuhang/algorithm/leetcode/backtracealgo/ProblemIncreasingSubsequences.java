@@ -10,14 +10,13 @@ public class ProblemIncreasingSubsequences {
 
     public List<List<Integer>> findSubsequences(int[] nums) {
        Set<List<Integer>> res = new HashSet<>(); //hashset去重
-       Arrays.sort(nums);
        backtrace(nums,0,new ArrayList<>(),res);
        return new ArrayList<>(res);
     }
 
     private void backtrace(int[] nums, int index,List<Integer> tmp,Set<List<Integer>> res) {
         if(tmp.size() >=2){
-           res.add(new ArrayList<>(tmp));
+           res.add(new ArrayList<>(tmp));//加入结果集后不返回,继续遍历
         }
         for (int i = index; i < nums.length; i++) {
            if(!tmp.isEmpty() && tmp.get(tmp.size()-1) > nums[i]) continue;
