@@ -23,7 +23,7 @@ public class ProblemPowerOfTwo {
     }
 
     /**
-     * 位运算,2的幂次方满足n & (n-1) 为0,hashmap中也是
+     * 位运算,2的幂次方满足n & (n-1) 为0,hashmap中用hashcode & (size-1)来定位槽位
      * @param n
      * @return
      */
