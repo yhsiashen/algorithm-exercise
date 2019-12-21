@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.graphBFSDFS;
+package org.yuhang.algorithm.leetcode.graphAndBFSDFS;
 
 
 /**

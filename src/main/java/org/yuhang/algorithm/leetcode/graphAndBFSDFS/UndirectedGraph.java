@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.graphBFSDFS;
+package org.yuhang.algorithm.leetcode.graphAndBFSDFS;
 
 import java.util.LinkedList;
 import java.util.Queue;
