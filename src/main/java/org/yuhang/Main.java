@@ -1,6 +1,7 @@
 package org.yuhang;
 
 
+import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +13,8 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-    static class Student{
+    static class Student implements Serializable {
+
         String sex;
         int age;
 
@@ -51,8 +53,7 @@ public class Main {
         list.add(new Student("male",18));
         list.add(new Student("male",22));
 
-        Map<String, List<Student>> stuMap = new HashMap<>();
-
+        Map<String, List<Student>> stuMap;
         stuMap = list.stream().filter(student -> student.age > 18).collect(Collectors.groupingBy(student -> student.sex));
         System.out.println(stuMap);
 
