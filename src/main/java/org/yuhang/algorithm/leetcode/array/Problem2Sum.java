@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 在数组中找出和为目标值的两个整数的下标 1
  */
-public class ProblemTwoSum {
+public class Problem2Sum {
 
     /**
      * brute force

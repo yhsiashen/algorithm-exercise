@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 找出数组中最接近给定target的三数之和  16
  */
-public class ProblemThreeSumClosest {
+public class Problem3SumClosest {
 
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
@@ -33,6 +33,6 @@ public class ProblemThreeSumClosest {
 
     public static void main(String[] args) {
          int[] nums = {-1,2,1,-4};
-        System.out.println(new ProblemThreeSumClosest().threeSumClosest(nums,1));
+        System.out.println(new Problem3SumClosest().threeSumClosest(nums,1));
     }
 }

@@ -4,7 +4,7 @@ package org.yuhang.algorithm.leetcode.array;
 /**
  * 两数之和 II LC167
  */
-public class ProblemTwoSumIISorted {
+public class Problem2SumIISorted {
 
     public int[] twoSum(int[] numbers, int target) {
         for (int i = 0; i < numbers.length; i++) {
@@ -32,7 +32,7 @@ public class ProblemTwoSumIISorted {
 
     public static void main(String[] args) {
         int[] nums = {5,25,75};
-        int[] res = new ProblemTwoSumIISorted().twoSum(nums,100);
+        int[] res = new Problem2SumIISorted().twoSum(nums,100);
         for (int i = 0; i < res.length; i++) {
             System.out.println(res[i]);
         }

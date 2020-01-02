@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * 给定一个数组，判断数组中是否存在三个元素a,b,c,使得a+b+c=0   15
  */
-public class ProblemThreeNumSum {
+public class Problem3Sum {
 
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums == null)
@@ -56,6 +56,6 @@ public class ProblemThreeNumSum {
 
     public static void main(String[] args) {
         int[] nums = {-2,0,1,1,2};
-        System.out.println(new ProblemThreeNumSum().threeSum(nums).toString());
+        System.out.println(new Problem3Sum().threeSum(nums).toString());
     }
 }
