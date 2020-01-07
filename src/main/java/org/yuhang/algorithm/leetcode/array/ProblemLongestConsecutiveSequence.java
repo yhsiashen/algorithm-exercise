@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.unionfind;
+package org.yuhang.algorithm.leetcode.array;
 
 import java.util.HashSet;
 import java.util.Set;
