@@ -55,9 +55,9 @@ public class UnionFind {
      * @param p
      * @return
      */
-    private int find(int p) {
+    public int find(int p) {
         while (parent[p] != p){
-            p = parent[p];
+            p = parent[parent[p]];//路径优化
         }
         return p;
     }
