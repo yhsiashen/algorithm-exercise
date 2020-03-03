@@ -1,4 +1,4 @@
-package org.yuhang.designpattern.proxy;
+package org.yuhang.designpattern.proxy.jdkdynamicproxy;
 
 /**
  * Created by chinalife on 2018/5/10.

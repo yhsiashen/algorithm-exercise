@@ -29,7 +29,7 @@ public class ProblemLargestRectangleArea {
     }
 
     /**
-     * 单调递增栈
+     * 单调递增栈,用一个栈保存一个单调递增的序列，遇到减的元素则弹出栈顶元素计算一次面积大小
      * @param heights
      * @return
      */
