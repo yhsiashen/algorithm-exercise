@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.queue;
+package org.yuhang.algorithm.leetcode.slidingwindow;
 
 import java.util.Arrays;
 

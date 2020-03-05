@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.array;
+package org.yuhang.algorithm.leetcode.slidingwindow;
 
 
 /**
