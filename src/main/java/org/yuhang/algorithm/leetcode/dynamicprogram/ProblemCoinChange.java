@@ -1,5 +1,7 @@
 package org.yuhang.algorithm.leetcode.dynamicprogram;
 
+import java.util.Arrays;
+
 /**
  * 换钱的最少货币数 322
  * Created by chinalife on 2018/10/27.
@@ -33,6 +35,20 @@ public class ProblemCoinChange {
         }
 
         return dp[n-1][aim]!=max?dp[n-1][aim]:-1;
+    }
+
+    public int coinChange1(int[] coins, int amount) {
+        if(coins.length == 0) return -1;
+        int[] dp = new int[amount+1];//dp[i]表示凑够i钱需要的硬币数量
+        Arrays.fill(dp,0,amount+1,Integer.MAX_VALUE);//初始状态填充为MAX_VALUE
+        dp[0] = 0;
+        for (int i = 0; i < dp.length ; i++) {
+            for(int coin:coins){
+                if(i-coin < 0) continue;
+                dp[i] = Math.min(dp[i],dp[i-coin]+1);
+            }
+        }
+        return dp[amount] == Integer.MAX_VALUE?-1:dp[amount];
     }
 
     public static void main(String[] args) {

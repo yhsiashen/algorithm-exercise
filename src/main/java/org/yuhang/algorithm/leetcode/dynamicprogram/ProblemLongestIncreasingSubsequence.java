@@ -24,6 +24,30 @@ public class ProblemLongestIncreasingSubsequence {
         return res;
     }
 
+    /**
+     * 二分查找 时间复杂度O(nlogn)
+     * @param nums
+     * @return
+     */
+    public int lengthOfLIS1(int[] nums) {
+        int res = 0;
+        int[] dp = new int[nums.length]; // dp[i]表示长度i+1的子序列的尾部元素(保持尾部元素最小),则dp数组是一个递增序列
+        for(int num:nums){
+            int lo=0,hi=res;
+            while (lo < hi){//运用二分查找，找到num应插入的位置
+                int mid = (lo+hi)/2;
+                if(dp[mid] < num){
+                    lo = mid+1;
+                }else{
+                    hi = mid;
+                }
+            }
+            dp[lo] = num;//插入num到相应位置
+            if(lo == res) res++ ;
+        }
+        return res;
+    }
+
 
     public static void main(String[] args) {
         int[] nums = {4,10,4,3,8,9};
