@@ -8,6 +8,30 @@ import java.util.Stack;
  */
 public class ProblemTrapWater {
 
+    /**
+     * 单调栈，用栈保存墙高度的状态，在每次遇到高墙(>栈顶墙高)时计算一次雨水的容量，完毕之后将高墙压入栈中
+     * @param height
+     * @return
+     */
+    public int trap2(int[] height){
+        Stack<Integer> stack = new Stack<>();
+        int res = 0;
+        int current = 0;
+        while (current < height.length){
+            while (!stack.isEmpty() && height[stack.peek()] < height[current]){
+                int h = height[stack.pop()];
+                if(stack.isEmpty()) break;
+                int distance = current - stack.peek()-1;
+                int min = Math.min(height[stack.peek()],height[current]);
+                res += distance*(min-h);
+            }
+            stack.push(current);
+            current++;
+
+        }
+        return res;
+    }
+
 
     /**
      * 动态规划，计算每列左右边的最大高度，然后按列计算每列存储的水
@@ -65,29 +89,6 @@ public class ProblemTrapWater {
     }
 
 
-    /**
-     * 用栈保存墙高度的状态，在每次遇到高墙(>栈顶墙高)时计算一次雨水的容量，完毕之后将高墙压入栈中
-     * @param height
-     * @return
-     */
-    public int trap2(int[] height){
-        Stack<Integer> stack = new Stack<>();
-        int res = 0;
-        int current = 0;
-        while (current < height.length){
-            while (!stack.isEmpty() && height[stack.peek()] < height[current]){
-               int h = height[stack.pop()];
-               if(stack.isEmpty()) break;
-               int distance = current - stack.peek()-1;
-               int min = Math.min(height[stack.peek()],height[current]);
-               res += distance*(min-h);
-            }
-            stack.push(current);
-            current++;
-
-        }
-        return res;
-    }
 
     public static void main(String[] args) {
         System.out.println(new ProblemTrapWater().trap2(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));

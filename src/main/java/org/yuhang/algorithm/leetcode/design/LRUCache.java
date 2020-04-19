@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode.linkedlist;
+package org.yuhang.algorithm.leetcode.design;
 
 
 import java.util.Hashtable;
@@ -9,6 +9,9 @@ import java.util.Hashtable;
 public class LRUCache {
 
 
+    /**
+     * Definition of Double Linked Node
+     */
     class DLinkedNode {
         int key;
         int value;

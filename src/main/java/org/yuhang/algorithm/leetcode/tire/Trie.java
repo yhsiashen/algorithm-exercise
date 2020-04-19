@@ -6,7 +6,7 @@ package org.yuhang.algorithm.leetcode.tire;
 public class Trie {
 
     /**
-     * a-z字符的trie实现,共26个字符
+     * a-z字符的trie树节点实现,共26个字符
      */
     class TrieNode{
         char data;
