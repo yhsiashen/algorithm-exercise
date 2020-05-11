@@ -1,4 +1,4 @@
-package org.yuhang.algorithm.leetcode;
+package org.yuhang.algorithm.leetcode.dynamicprogram;
 
 import java.util.Arrays;
 

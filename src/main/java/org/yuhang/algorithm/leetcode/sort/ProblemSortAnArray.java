@@ -119,7 +119,7 @@ public class ProblemSortAnArray {
     private void shitDown(int[] nums, int k, int end) {
         while (2*k+1<=end){
             int j = 2*k+1;
-            if(j+1<=end && nums[j+1]>nums[j]){
+            if(j+1<=end && nums[j+1]>nums[j]){//在k的左右子树 2*k+1 和 2*k+2 中选择较大的与k交换
                 j++;
             }
             if(nums[j] > nums[k]){
