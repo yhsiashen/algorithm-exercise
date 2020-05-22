@@ -18,7 +18,7 @@ public class CoinChange {
         if(coins.length == 0) return -1;
 
         int[][] dp = new int[coins.length][amount+1];//dp[i][j]表示coins[0~i]的硬币种类能凑成j的最少硬币数
-                                                     //dp[i][j] = min(dp[i-1][j-coins[i]]+1,dp[i-1][j])
+                                                     //dp[i][j] = min(dp[i][j-coins[i]]+1,dp[i-1][j])
 //        for (int i = 0; i < coins.length; i++) {
 //            dp[i][0] = Integer.MAX_VALUE;
 //        }
@@ -67,9 +67,25 @@ public class CoinChange {
 
     }
 
+    public int coinChange2(int[] coins, int amount) {
+        if(amount == 0) return 0;
+        if(coins.length == 0) return -1;
+        //由于二维空间dp中dp[i][j]最多只与dp[i-1][j]有关，所以只需要用dp[j]表示状态
+        int[] dp = new int[amount+1]; //dp[i]表示coins[0~n]的硬币组合能组成i的所需要的最小硬币数
+        Arrays.fill(dp,amount+1);
+        dp[0] = 0;
+        for(int coin:coins){
+            for (int i = coin; i < dp.length; i++) {
+               dp[i] = Math.min(dp[i],dp[i-coin]+1);
+            }
+        }
+        return dp[amount] == amount+1?-1:dp[amount];
+
+    }
+
     public static void main(String[] args) {
-        int[] coins = {2,5,10,1};
-        int amount = 27;
+        int[] coins = {1,2,5};
+        int amount = 11;
         System.out.println(new CoinChange().coinChange(coins, amount));
 
     }
