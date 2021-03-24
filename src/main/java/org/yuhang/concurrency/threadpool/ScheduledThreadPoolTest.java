@@ -1,6 +1,5 @@
-package org.yuhang.concurrency.ThreadPool;
+package org.yuhang.concurrency.threadpool;
 
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.concurrent.*;
 
