@@ -46,7 +46,7 @@ public class ProblemBasicCalculatorII {
     }
 
     public static void main(String[] args) {
-           String reg = "42";
+           String reg = "3-50/2";
         System.out.println(new ProblemBasicCalculatorII().calculate(reg));
 
     }

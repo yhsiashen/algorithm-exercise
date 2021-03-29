@@ -20,12 +20,10 @@ public class Calculate {
     public int calculate(String s) {
        Deque<Integer> numStack = new LinkedList<>();
        Deque<Character> charStack = new LinkedList<>();
-       s.replace(" ","");
+       s=s.replace(" ","");
        for (int i = 0; i < s.length();) {
           char ch  = s.charAt(i);
-          if(ch == ' '){
-
-          }else if(ch == '+' || ch == '-'){
+          if(ch == '+' || ch == '-'){
               charStack.offer(ch);
           }else if(Character.isDigit(ch)){
               int num = ch - '0';
@@ -35,7 +33,7 @@ public class Calculate {
               }
               numStack.offer(num);
           }else{//为"*"或者"/"
-              int nextInt = s.charAt(i) - '0';
+              int nextInt = s.charAt(++i) - '0';
               while (i+1 < s.length() && Character.isDigit(s.charAt(i+1))){
                   nextInt = nextInt * 10 + (s.charAt(i+1)-'0');
                   i++;
@@ -66,8 +64,46 @@ public class Calculate {
        return numStack.pop();
     }
 
+    public int calculate1(String s) {
+        Stack<Integer> stack = new Stack<>();
+        char symbol = '+';//表示最近的运算符号
+        int num = 0;
+        s = s.replace(" ","");
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if(Character.isDigit(ch)){
+                num = num * 10 + ch - '0';
+            }
+
+            if(!Character.isDigit(ch) || i == s.length() -1){
+                switch (symbol){
+                    case '+':
+                        stack.push(num);
+                        break;
+                    case '-':
+                        stack.push(-num);
+                        break;
+                    case '*':
+                        stack.push(stack.pop()*num);
+                        break;
+                    case '/':
+                        stack.push(stack.pop()/num);
+                        break;
+                }
+                symbol = ch;
+                num = 0;
+            }
+        }
+
+        int res = 0;
+        while (!stack.isEmpty()){
+            res += stack.pop();
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
-        String str = "1*2-3/4+5*6-7*8+9/10";
+        String str = " 3+5 / 2 ";
         Calculate calculate = new Calculate();
         System.out.println(calculate.calculate(str));
     }
