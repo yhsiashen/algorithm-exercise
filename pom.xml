@@ -25,29 +25,15 @@
             <artifactId>netty</artifactId>
             <version>RELEASE</version>
         </dependency>
-
-        <dependency>
-           <groupId>io.netty</groupId>
-           <artifactId>netty-all</artifactId> <!-- Use 'netty-all' for 4.0 or above -->
-           <version>4.1.42.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-            <version>2.1_3</version>
-        </dependency>
-
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>21.0</version>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>17.0.0</version>
-            <scope>compile</scope>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.19.0-GA</version>
         </dependency>
     </dependencies>
 
