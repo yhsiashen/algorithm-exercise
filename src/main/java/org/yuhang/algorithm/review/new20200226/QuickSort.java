@@ -21,7 +21,9 @@ public class QuickSort {
 
     private void quickSort(int[] nums, int l, int r){
         if(l <= r){
-            int pos = l;  //pos表示比nums[l]小的数的最右边索引
+            int pos = random.nextInt(r)%(r-l+1)+l; // 随机选取[l-r]范围内的数字作为pos数
+            swap(nums, l, pos);//和第l位交换
+            pos = l;//pos指定为l位
             for (int i = l+1; i <= r ; i++) {
                 if(nums[i] <= nums[l]){  //若nums[i]小于flag，则将其与pos+1位置的元素交换
                     swap(nums,i,++pos);
