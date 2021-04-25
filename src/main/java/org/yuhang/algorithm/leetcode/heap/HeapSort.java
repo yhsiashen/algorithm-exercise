@@ -29,7 +29,7 @@ public class HeapSort {
             //0位置不存数据，则最多能堆化n个数据
             a = vals;
             count = 0;
-            initHeap2(a,n);
+            initHeap(a,n);
         }
 
         /**
@@ -38,7 +38,7 @@ public class HeapSort {
          */
         private void initHeap(int[] a, int n) {
             //从第一个非叶子节点开始，依次堆化
-            for (int i = n/2; i >= 1; i--) {
+            for (int i = n/2-1; i >= 1; i--) {
                 heapify(a, n, i);
             }
         }
@@ -114,7 +114,7 @@ public class HeapSort {
     }
 
     public static void main(String[] args) {
-        int[] a = {0,1,0,3,4,7,8,2};
+        int[] a = {1,0,3,4,7,8,2};
         Heap heap = new Heap(a);
         heap.heapSort();
         for (int i:heap.a) {
