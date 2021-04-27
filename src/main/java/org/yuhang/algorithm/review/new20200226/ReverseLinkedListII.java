@@ -68,8 +68,46 @@ public class ReverseLinkedListII {
            pre.next = next;
         }
         return dummy.next;
-
     }
+
+    public ListNode reverseList(ListNode head){
+        if(head == null || head.next == null) return head;
+        ListNode dummy = new ListNode(1);
+        dummy.next = head;
+        ListNode cur = dummy.next;
+        while (cur.next!=null){
+            ListNode next = cur.next;
+            cur.next = next.next;
+            next.next = dummy.next;
+            dummy.next = next;
+        }
+        return dummy.next;
+    }
+
+    public ListNode reverseList1(ListNode head){
+        if(head == null || head.next == null) return head;
+        ListNode pre= null;
+        while (head!=null){
+            ListNode next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+
+    public ListNode reverseList2(ListNode head){
+        return reverse(head,null);
+    }
+
+    private ListNode reverse(ListNode cur,ListNode pre){
+        if(cur == null) return pre;
+        ListNode next = cur.next;
+        cur.next = pre;
+        pre = cur;
+        return reverse(next, pre);
+    }
+
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -77,7 +115,8 @@ public class ReverseLinkedListII {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        new ReverseLinkedListII().reverseBetween(head, 2,4);
+        ListNode list  = new ReverseLinkedListII().reverseList2(head);
+        System.out.println(list);
 
     }
 }
