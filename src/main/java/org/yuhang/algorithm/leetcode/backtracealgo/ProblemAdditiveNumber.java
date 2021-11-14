@@ -9,58 +9,52 @@ import java.math.BigInteger;
 public class ProblemAdditiveNumber {
 
     public boolean isAdditiveNumber(String num) {
-        if (num.length() < 3) return false;
-        for (int i = 1; i < num.length() + 1; i++) {
-            BigDecimal a = new BigDecimal(num.substring(0, i));
-            BigDecimal b = new BigDecimal("0");
-            if (i<num.length() && num.charAt(i) == '0') {//当前头元素为0，单独考虑
-                int k = i + 2;
-                while (k < num.length() + 1) {
-                    BigDecimal c = new BigDecimal(num.substring(i + 1, k));
-                    if (a.equals(c)) {
-                        if (k == num.length()) return true;
-                        return backtrace(num.substring(i), 1, k - i);
-                    }
-                    k++;
-                }
-            } else {
-                for (int j = i + 1; j < num.length() + 1; j++) {
-                    b = new BigDecimal(num.substring(i, j));
-                    int k = j + 1;
-                    while (k < num.length() + 1) {
-                        BigDecimal c = new BigDecimal(num.substring(j, k));
-                        if ((a.add(b)).equals(c)) {
-                            if (k == num.length()) return true;
-                            return backtrace(num.substring(i), j - i, k - i);
-                        }
-                        k++;
-                    }
-                }
-            }
-        }
-            return false;
-
+        return backtrace(num,new BigDecimal(-1),new BigDecimal(-1),0);
     }
-
-    private boolean backtrace(String num,int j,int k){
-        BigDecimal a = new BigDecimal(num.substring(0,j));
-        BigDecimal b = new BigDecimal(num.substring(j,k));
-        int l = k+1;
-        while (l<num.length()+1){
-            BigDecimal c = new BigDecimal(num.substring(k,l));
-            if((a.add(b)).equals(c)){
-                if(l==num.length()) return true;
-                return backtrace(num.substring(j),k-j,l-j);
+    //"19910011992"
+    private boolean backtrace(String num,  BigDecimal pre1, BigDecimal pre2, int calnum){
+        if("".equals(num) && calnum >0) return true;
+        BigDecimal subStr;
+        for (int i = 0; i < num.length(); i++) {
+//            try {
+//                subStr = Long.parseLong(num.substring(0, i + 1));//注意整数溢出问题?
+//            }catch (Exception e){
+//                System.out.println("溢出了！字符串为:"+num.substring(0,i+1));
+//                return false;
+//            }
+//            subStr = subStr*10+num.charAt(i) - '0';
+            subStr = new BigDecimal(num.substring(0,i+1));
+            if(pre1.equals(new BigDecimal(-1))){
+                if(backtrace(num.substring(i+1), subStr, pre2,calnum)){
+                    return true;
+                }
+            }else if(pre2.equals(new BigDecimal(-1))){
+                if(backtrace(num.substring(i+1), pre1,subStr,calnum)){
+                    return true;
+                }
+            }else{
+                if(pre1.add(pre2).equals( subStr)) {
+                    if (backtrace(num.substring(i + 1), pre2, subStr, calnum + 1)) {
+                        return true;
+                    }
+                }
+//                }else if(pre1+pre2 < subStr){//剪枝
+//                    break;
+//                }
             }
-            l++;
+            if(i==0 && num.charAt(0) == '0') break;//当首字母为0时，只允许取0充当一个数，后续的不再判断
         }
         return false;
     }
 
     public static void main(String[] args) {
-//        System.out.println(new ProblemAdditiveNumber().isAdditiveNumber("101"));
-        BigInteger big = new BigInteger("1231242345435490231435");
-        System.out.println(big.add(new BigInteger("23423422")).toString(2));
+//        System.out.println(new ProblemAdditiveNumber().isAdditiveNumber(
+//                "11235813213455890144"));
+        BigDecimal i = new BigDecimal("1.23");
+        BigDecimal j = new BigDecimal("2031");
+        System.out.println(i.add(j).toString());
+        System.out.println(i.add(j).floatValue());
+
     }
 
 
