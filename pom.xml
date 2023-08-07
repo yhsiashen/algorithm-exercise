@@ -23,7 +23,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty</artifactId>
-            <version>RELEASE</version>
+            <version>3.9.8.Final</version>
         </dependency>
 
         <dependency>
